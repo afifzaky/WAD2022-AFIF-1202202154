@@ -1,0 +1,91 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+h6 {
+    text-align: center;
+}
+.reservation {
+    text-align: center;
+}
+
+li:hover {
+    background-color: rgba(181, 252, 252, 0.993);
+    border-bottom: 3px;
+    transition: .1s ease-in-out;
+    transition-delay: .2s;
+}
+
+li {
+    font-weight: 500;
+    list-style-type: none;
+}
+
+iframe {
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: #777;
+}
+
+iframe {
+    display: block;
+    border-style: none;
+}
+
+.c1 ul {
+    color: rgb(0, 0, 0);
+}
+
+.c2 ul {
+    color: rgb(0, 0, 0);
+}
+
+.c1 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.c2 {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.c1 .img {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.c2 .img {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.about2 {
+    padding: 20px;
+    background-color: rgb(192, 255, 241);
+}
+
+.cartype2 {
+    padding: 20px;
+    background-color: rgb(192, 255, 241);
+}
+
+.text-dark {
+    text-decoration: none;
+}
