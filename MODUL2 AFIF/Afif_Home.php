@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,6 +11,9 @@
      <title>EAD RENT</title>
 </head>
 <body>
+
+<!-- NAVIGATION BAR -->
+
      <nav class="navbar bg-dark navbar-expand-lg navbar-black">
           <div class="container">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar" aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,17 +30,26 @@
                </div>
           </div>
      </nav>
+
+<!-- HEADER -->
+
      <div class="mt-3" style="text-align: center">
           <h3><strong>WELCOME TO EAD RENT</strong></h3>
           <br>
           <p>Find Your Best Deal, Here!</p>
           <br>
      </div>
+
+<!-- CARDS CAR / CATALOG CAR -->
+
      <section class="container" id="cars">
           <div class="row row-cols-1 row-cols-md-3 g-4">
                <div class="col">
                     <div class="card">
                          <img src="https://gamemodels.ru/screenshots/monthly_01_2020/ce4f05cf62b87625adad43f20722120a-thumbnail_455_big.png" style="max-height: 240px" class="card-img-top">
+
+<!-- TOYOTA COROLLA -->
+
                          <div class="card-body">
                               <h5 class="card-title">Toyota Corolla AE86 Sprinter Trueno</h5>
                               <p class="card-text text-muted">Rp. 300000 / Day</p>
@@ -49,10 +60,13 @@
                               <li class="list-group-item text-primary">Manual</li>
                          </ul>
                          <div class="card-footer d-flex justify-content-center">
-                              <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=Toyota Corolla AE86 Sprinter Trueno">Book Now</a>
+                              <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=ToyotaCorolla">Book Now</a>
                          </div>
                     </div>
                </div>
+
+<!-- NISSAN SKYLINE -->
+
                <div class="col">
                     <div class="card">
                          <img src="https://www.forzafire.com/images/base/cars/1993-nissan-skyline-gt-r-v-spec.png" style="max-height: 240px" class="card-img-top">
@@ -66,10 +80,13 @@
                               <li class="list-group-item text-primary">Manual</li>
                          </ul>
                          <div class="card-footer d-flex justify-content-center">
-                              <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=Nissan Skyline GT-R V-SPEC">Book Now</a>
+                              <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=NissanSkyline">Book Now</a>
                          </div>
                     </div>
                </div>
+
+<!-- NISSAN PULSAR -->
+
                <div class="col">
                     <div class="card">
                          <img src="https://www.forzafire.com/images/base/cars/1990-nissan-pulsar-gti-r.png" style="max-height: 240px" class="card-img-top">
@@ -83,12 +100,15 @@
                               <li class="list-group-item text-primary">Manual</li>
                          </ul>
                          <div class="card-footer d-flex justify-content-center">
-                              <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=Nissan Pulsar GTI-R">Book Now</a>
+                              <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=NissanPulsar">Book Now</a>
                          </div>
                     </div>
                </div>
           </div>
      </section>
+
+<!-- FOOTER -->
+
      <footer class=" bg-light mt-4">
           <div class="text-center p-3" style="color: gray;">
                <h6 class="mt-2">Created by Afif_1202202154</h6>

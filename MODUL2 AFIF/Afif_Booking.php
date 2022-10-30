@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,19 +18,24 @@
                $('img').attr("src", value);
           }
      </script>
+
+<!-- PHP CAR FIRST PICTURE -->
+
      <?php
      if (empty($_GET['cars'])) :
-          $cars = "Toyota Corolla AE86 Sprinter Trueno";
+          $cars = "ToyotaCorolla";
           $imgUrl = "https://gamemodels.ru/screenshots/monthly_01_2020/ce4f05cf62b87625adad43f20722120a-thumbnail_455_big.png";
      else :
           $cars = $_GET['cars'];
      endif;
 
-     if ($cars == "Toyota Corolla AE86 Sprinter Trueno") :
+// PHP CARS PICTURE
+
+     if ($cars == "ToyotaCorolla") :
           $imgUrl = "https://gamemodels.ru/screenshots/monthly_01_2020/ce4f05cf62b87625adad43f20722120a-thumbnail_455_big.png";
-     elseif ($cars == "Nissan Skyline GT-R V-SPEC") :
+     elseif ($cars == "NissanSkyline") :
           $imgUrl = "https://www.forzafire.com/images/base/cars/1993-nissan-skyline-gt-r-v-spec.png";
-     elseif ($cars == "Nissan Pulsar GTI-R") :
+     elseif ($cars == "NissanPulsar") :
           $imgUrl = "https://www.forzafire.com/images/base/cars/1990-nissan-pulsar-gti-r.png";
      endif;
      ?>
@@ -39,6 +43,9 @@
 </head>
 
 <body>
+
+<!-- NAVIGATION BAR -->
+
      <nav class="navbar bg-dark navbar-expand-lg navbar-black">
           <div class="container">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar" aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
@@ -55,6 +62,9 @@
                </div>
           </div>
      </nav>
+
+<!-- HEADER TITLE -->
+
      <div class="mx-auto mt-3" style="text-align: center">
           <h3>Rent Your Car Now!</h3>
      </div>
@@ -64,6 +74,9 @@
                     <div class="col-md-6">
                          <img src="<?= $imgUrl; ?>" onchange="setPicture()" alt="image-form" style="width:700px; margin-top:100px">
                     </div>
+
+<!-- BOOKING FORM -->
+
                     <div class="col-md-6">
                          <form action="Afif_MyBooking.php" method="POST">
                               <div class="mb-2">
@@ -130,11 +143,13 @@
                </div>
           </div>
      </section>
+
+<!-- FOOTER -->
+
      <footer class="bg-light mt-4">
           <div class="text-center p-3" style="color: gray;">
                <h6 class="mt-2">Created by Afif_1202202154</h6>
           </div>
      </footer>
 </body>
-
 </html>
