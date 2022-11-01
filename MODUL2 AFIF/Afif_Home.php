@@ -60,7 +60,7 @@
                                    <li class="list-group-item text-primary">Manual</li>
                               </ul>
                               <div class="card-footer d-flex justify-content-center">
-                                   <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=ToyotaCorola">Book Now</a>
+                                   <a class="btn btn-danger" type="submit" href="Afif_Booking.php?cars=ToyotaCorolla">Book Now</a>
                               </div>
                          </div>
                     </div>

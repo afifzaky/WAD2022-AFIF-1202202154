@@ -107,7 +107,7 @@
                                                        Nissan Pulsar GTI-R</option>
                                              </select>
                                         <?php else : ?>
-                                             <input type="text" class="form-control" value=<? $_GET['cars'] ?> name="cars" src readonly>
+                                             <input type="text" class="form-control" value=<?= $_GET['cars'] ?> name="cars" src readonly>
                                         <?php endif; ?>
                                    </div>
                                    <div class="mb-2">

@@ -14,7 +14,7 @@
         <?php
         error_reporting(E_ERROR | E_PARSE);
         $idNumber = rand(800000, 900000);
-        $nama = $_POST['name'];
+        $name = $_POST['name'];
         $sttime = $_POST['time1'];
         $date1 = $_POST['date1'];
         $duration = $_POST['duration'];
