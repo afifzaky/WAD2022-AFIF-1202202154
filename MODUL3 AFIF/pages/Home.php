@@ -1,9 +1,7 @@
 <?php
 require './config/koneksi.php';
-
 $query = "SELECT * FROM showroom_afif";
 $result = mysqli_query($koneksi, $query);
-
 function onClick($result)
 {
   if (mysqli_num_rows($result) > 0) {
@@ -13,7 +11,6 @@ function onClick($result)
   }
 }
 ?>
-
 <!doctype html>
 <html lang="en">
 
@@ -29,9 +26,9 @@ function onClick($result)
 
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg bg-primary">
+  <nav class="navbar navbar-expand-lg bg-success">
     <div class="container">
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" id="navbarAlt">
         <div class="navbar-nav gap-3">
           <a class="nav-link" style="color: white;" href="#home">Home</a>
           <a class="nav-link" href="<?php if (mysqli_num_rows($result) > 0) {
@@ -48,10 +45,10 @@ function onClick($result)
   <!-- Jumbotron -->
   <section id="home">
     <div class="container">
-      <div class="d-flex bungkus gap-5 justify-content-center align-items-center">
+      <div class="d-flex wrap gap-5 justify-content-center align-items-center">
         <div>
-          <h1>Selamat Datang Di<br /> Show Room Pak Ghost</h1>
-          <p class="mt-3">Menjual Segala Kebutuhan Mobil Militer</p>
+          <h1>Selamat Datang Di<br/> Show Room Pak Ghost</h1>
+          <p class="mt-3">Menjual Segala Kebutuhan Mobil Sport Untuk Militer</p>
           <a href="<?php if (mysqli_num_rows($result) > 0) {
                       echo "./pages/List.php";
                     } else {
@@ -68,7 +65,7 @@ function onClick($result)
   </section>
   <!-- Jumbotron End -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  <footer class=" bg-primary mt-4">
+  <footer class=" bg-success mt-4">
           <div class="text-center p-3" style="color: white;">
               <h6 class="mt-2">Showroom Pak Ghost All Right Reserved </h6>
           </div>

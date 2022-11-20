@@ -11,7 +11,7 @@
 </head>
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg bg-primary">
+  <nav class="navbar navbar-expand-lg bg-success">
     <div class="container">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-3">
@@ -47,7 +47,7 @@
           <input type="radio" name="status" id="belum" value="Belum Lunas" style="width: 15px; height: 15px; margin-right:10px;">
           <label for="belum" style="margin-top: 15px;">Belum Lunas</label>
         </span>
-        <button type="submit" class="btn btn-primary" style="margin-top: 40px;">Selesai</button>
+        <button type="submit" class="btn btn-success" style="margin-top: 40px;">Selesai</button>
       </form>
     </div>
   </section>

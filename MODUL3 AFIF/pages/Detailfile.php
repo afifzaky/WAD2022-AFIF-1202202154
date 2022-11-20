@@ -21,7 +21,7 @@ $result = mysqli_query($koneksi, $sql);
 </head>
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg bg-primary">
+  <nav class="navbar navbar-expand-lg bg-success">
     <div class="container">
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-3">
@@ -63,7 +63,7 @@ $result = mysqli_query($koneksi, $sql);
                       <input type='radio' name='status' id='belum' value='Belum Lunas' " . (($getDetail["status_pembayaran"] == 'Belum Lunas') ? 'checked="checked"' : "") . " style='width: 15px; height: 15px; margin-right:10px;'>
                       <label for='belum' style='margin-top: 15px;'>Belum Lunas</label>
                     </span>
-                    <a href='Editfile.php?id=" . $getDetail["id_mobil"] . "' class='btn btn-primary' style='margin-top: 40px;'>Edit</a>
+                    <a href='Editfile.php?id=" . $getDetail["id_mobil"] . "' class='btn btn-success' style='margin-top: 40px;'>Edit</a>
                   </form>
                 </div>
             ";

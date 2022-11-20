@@ -32,7 +32,7 @@ body {
   letter-spacing: 0.2px;
 }
 
-#home .bungkus {
+#home .wrap {
   margin-top: 200px;
 }
 
@@ -44,7 +44,7 @@ body {
   gap: 10px;
   width: 137px;
   height: 51px;
-  background: #35e9e0;
+  background: green;
   border-radius: 5px;
   border: none;
   color: white;

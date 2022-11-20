@@ -20,14 +20,14 @@ $result = mysqli_query($koneksi, $query);
 
 <body>
   <!-- Nav -->
-  <nav class="navbar navbar-expand-lg bg-primary">
+  <nav class="navbar navbar-expand-lg bg-success">
     <div class="container">
       <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-3">
           <a class="nav-link" href="../index.php">Home</a>
           <a class="nav-link" style="color: white;" href="#">MyCar</a>
         </div>
-        <a href="Addfile.php" style="background-color: white; color:blue; border-radius: 5px; text-decoration: none; width: 110px; height: 35px; display:flex; justify-content:center; align-items:center; font-weight:500;">Add Car</a>
+        <a href="Addfile.php" style="background-color: white; color:green; border-radius: 5px; text-decoration: none; width: 110px; height: 35px; display:flex; justify-content:center; align-items:center; font-weight:500;">Add Car</a>
       </div>
     </div>
   </nav>
@@ -49,7 +49,7 @@ $result = mysqli_query($koneksi, $query);
               <h5 class='card-title'>" . $row["nama_mobil"] . "</h5>
               <p class='card-text'>" . substr($row["deskripsi"], 0, 50) . '...' . "</p>
               <span class='d-flex'>
-                <a href='Detailfile.php?id=" . $row["id_mobil"] . "' class='btn btn-primary' style='border-radius: 100px; width:140px; height: 36px;'>Detail</a>
+                <a href='Detailfile.php?id=" . $row["id_mobil"] . "' class='btn btn-success' style='border-radius: 100px; width:140px; height: 36px;'>Detail</a>
                 <a href='../config/delete.php?id=" . $row["id_mobil"] . "' class='btn btn-danger' style='border-radius: 100px; width:140px; height: 36px; margin-left:20px;'>Delete</a>
               </span>
             </div>
@@ -68,7 +68,7 @@ $result = mysqli_query($koneksi, $query);
   <!-- footer -->
   <footer class="fixed-bottom" style="padding-bottom: 50px;">
     <div class="container">
-      <p style="font-family: 'Raleway'; font-style: normal; font-weight: 700; font-size: 16px; line-height: 19px; color: #757575;">Jumlah Mobil : <?php echo mysqli_num_rows($result) ?></p>
+      <p style="font-family: 'Raleway'; font-style: normal; font-weight: 700; font-size: 16px; line-height: 19px; color: #757575;">Total Mobil : <?php echo mysqli_num_rows($result) ?></p>
     </div>
   </footer>
   <!-- footer end -->
