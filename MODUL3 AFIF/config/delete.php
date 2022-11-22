@@ -3,7 +3,7 @@
 
   $id = $_GET['id'];
 
-  $sql = "DELETE FROM showroom_afif WHERE id_mobil = id";
+  $sql = "DELETE FROM showroom_afif WHERE id_mobil = $id";
 
   if (mysqli_query($koneksi, $sql)) {
     header("location: ../pages/List.php");
