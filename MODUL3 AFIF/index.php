@@ -1,4 +1,4 @@
 
-<?php
+    <?php
 
-require './pages/Home.php';
+    require './pages/Home.php';
