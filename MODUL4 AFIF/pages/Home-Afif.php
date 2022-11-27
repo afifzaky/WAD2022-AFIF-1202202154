@@ -53,7 +53,7 @@ function onClick($result)
           <h1>Selamat Datang Di<br/> Show Room Pak Ghost</h1>
           <p class="mt-3">Menjual Segala Kebutuhan Mobil Sport Untuk Militer</p>
           <a href="<?php if (mysqli_num_rows($result) > 0) {
-                      echo "./pages/List.php";
+                      echo "./pages/List-Afif.php";
                     } else {
                       echo "./pages/Addfile-Afif.php";
                     } ?>" class="button btn-primary">MyCar</a>
