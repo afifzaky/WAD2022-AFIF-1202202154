@@ -62,7 +62,7 @@
             $nama = $_POST["nama"];
             $email = $_POST["email"];
             $nohp = $_POST["nohp"];
-            $pass = mysqli_real_escape_strings($sqlconnect, $_POST["pass"]);
+            $pass = mysqli_real_escape_string($sqlconnect, $_POST["pass"]);
             $query = "INSERT INTO user_afif
             VALUES
             ('', '$nama', '$email', '$pass', '$nohp')
