@@ -14,11 +14,6 @@ use App\Http\Controllers\ShowroomController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
-// ==================== User Route ====================
 Route::get('/register', [UserController::class, 'index'])->name('register.get');
 Route::post('/register', [UserController::class, 'register']);
 Route::get('login', [UserController::class, 'login'])->name('login.get');
@@ -28,17 +23,12 @@ route::post('/logout', [UserController::class, 'logoutUser']);
 route::put('/profile/{id}', [UserController::class, 'edit'])->name('updateProfile.put');
 Route::get('/profile/{id}', [UserController::class, 'userDetail'])->name('userDetail');
 
-
-
-// ==================== Showroom Route ====================
 Route::post('addCar', [ShowroomController::class, 'addCar'])->name('addCar.post');
 Route::get('/list', [ShowroomController::class, 'showCar'])->name('showCar');
 Route::get('/detail/{id}', [ShowroomController::class, 'carDetail'])->name('carDetail');
 Route::put('/detail/{id}', [ShowroomController::class, 'editCar'])->name('updateCar.put');
 Route::delete('list/{id}', [ShowroomController::class, 'deleteCar']);
 
-
-// ==================== View Route ====================
 Route::get('/', function () {
     return view('home');
 });

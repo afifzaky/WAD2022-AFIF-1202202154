@@ -3,7 +3,7 @@
     active
 @endsection
 @section('content')
-<!-- Content -->
+
 <section id="list">
     <div class="container">
       <div>
@@ -18,7 +18,6 @@
                 <p class='card-text'>{{ $row->description }}</p>
                 <span class='d-flex gap-2'>
                   <a href='{{ '/detail/'.$row->id }}' class='btn btn-success' style='border-radius: 100px; width:140px; height: 36px;'>Detail</a>
-                  {{-- delete car --}}
                   <form action='{{ url('list/'.$row->id) }}' method='POST'>
                     @csrf
                     @method('DELETE')
@@ -32,5 +31,5 @@
       </div>
     </div>
   </section>
-<!-- Content End -->
+
 @endsection

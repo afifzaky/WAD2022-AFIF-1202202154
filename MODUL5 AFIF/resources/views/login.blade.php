@@ -10,14 +10,12 @@
                         <h2 class="fw-bold mb-4">Login</h2>
                         <form action="{{ route('login.post') }}" method="POST">
                             @csrf
-                            <!-- Email input -->
                             <div class="form-outline mb-4">
                                 <label class="form-label" for="email">Email</label>
                                 <input type="email" id="email" class="form-control form-control-lg" name="email"
                                     placeholder="Masukkan Email"
                                     value="<?= isset($_COOKIE['email']) ? $_COOKIE['email'] : '' ?>" />
                             </div>
-                            <!-- Password input -->
                             <div class="form-outline mb-4">
                                 <label class="form-label
                                 " for="password">Sandi</label>
@@ -25,7 +23,6 @@
                                     placeholder="Masukkan Sandi"
                                     value="<?= isset($_COOKIE['password']) ? $_COOKIE['password'] : '' ?>" />
                             </div>
-                            <!-- Checkbox -->
                             <div class="form-check mb-0">
                                 <input class="form-check-input me-2" type="checkbox" value="" id="check"
                                     name="check" />

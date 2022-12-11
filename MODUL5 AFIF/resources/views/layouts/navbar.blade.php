@@ -1,7 +1,6 @@
-<!-- Nav -->
+
 <nav class="navbar navbar-expand navbar-dark bg-success">
     <div class="container py-2">
-        {{-- check if user is logged in --}}
         @auth
             <div class="navbar-nav">
                 <a class="nav-link" style="color: white;" href="{{ '/' }}">Home</a>
@@ -16,7 +15,6 @@
                     </button>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item text-success" href="{{ '/profile/'.auth()->user()->id }}">Profile</a></li>
-                        {{-- Logout --}}
                         <li>
                             <form action="{{ url('/logout') }}" method="POST">
                                 @csrf
@@ -32,7 +30,5 @@
                 <a class="nav-link" href="{{ 'login' }}">Login</a>
             </div>
         @endauth
-
     </div>
 </nav>
-<!-- Nav End -->

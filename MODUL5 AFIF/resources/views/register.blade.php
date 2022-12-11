@@ -11,28 +11,24 @@
                     <h2 class="fw-bold mb-4">Register</h2>
                     <form action="{{ url('/register')}}" method="POST" enctype="multipart/form-data">
                         @csrf
-                        <!-- Email input -->
                         <div class="mb-3 position-relative">
                             <label class="form-label " for="email">Email</label>
                             <span class="required" style="top: 0px; left: 41px;">*</span>
                             <input type="email" id="email" class="form-control form-control-lg" name="email"
                                 placeholder="Masukkan Email" required />
                         </div>
-                        <!-- nama input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="name">Nama</label>
                             <span class="required" style="top: 0px; left: 41px;">*</span>
                             <input type="name" id="name" class="form-control form-control-lg" name="name"
                                 placeholder="Masukkan Nama" required />
                         </div>
-                        <!-- no hp input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="no_hp">Nomor Handphone</label>
                             <span class="required" style="top: 0px; left: 41px;">*</span>
                             <input type="no_hp" id="no_hp" class="form-control form-control-lg" name="no_hp"
                                 placeholder="Masukan Nomor Handphone" required />
                         </div>
-                        <!-- Password input -->
                         <div class="form-outline mb-4">
                             <label class="form-label" for="password">Sandi</label>
                             <span class="required" style="top: 0px; left: 41px;">*</span>
@@ -40,7 +36,6 @@
                                 placeholder="Masukkan Sandi" required />
                         </div>
                         <div class="form-outline mb-4">
-                            <!-- Password input -->
                             <div class="form-outline mb-3">
                                 <label class="form-label" for="password2">Konfirmasi Sandi</label>
                                 <span class="required" style="top: 0px; left: 41px;">*</span>
