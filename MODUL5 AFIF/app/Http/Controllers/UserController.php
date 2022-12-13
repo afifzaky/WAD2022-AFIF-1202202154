@@ -34,7 +34,7 @@ class UserController extends Controller
      */
     public function register(Request $request)
     {
-        $date = $request->all();
+        $data = $request->all();
 
         User::create([
             'name' => $data['name'],
